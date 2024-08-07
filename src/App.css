@@ -1139,9 +1139,7 @@ table {
 .box-sd3 {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
 }
-body {
-  overflow: hidden;
-}
+
 .wrapper {
   padding-left: 16px;
   padding-right: 16px;
@@ -1203,13 +1201,10 @@ th {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .navbar {
-    height: calc(100vh - 72px);
-  }
+  .navbar,
   .dashbord {
-    height: calc(100vh - 72px);
+    height: 100vh;
   }
-
   .ordersCards,
   .activityChart,
   .recent-order {
@@ -1245,10 +1240,6 @@ th {
     padding-left: 12px;
     padding-right: 12px;
   }
-  .navbar {
-    height: calc(100vh - 48px);
-  }
-
   thead {
     display: none;
   }
@@ -1289,8 +1280,9 @@ th {
   .profileBtn {
     font-size: 18px;
   }
+  .navbar,
   .dashbord {
-    height: calc(100vh - 72px);
+    height: calc(100vh - 48px);
   }
   .totalOrder,
   .totalCancelled {

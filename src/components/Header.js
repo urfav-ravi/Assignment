@@ -11,7 +11,7 @@ function Header() {
       <div className="logoImg plr12">
         <img src="/images/logo.png" alt="logo" className="logo df" />
       </div>
-      <div className="headerComps v-center jcsb wrapper w100 brd-b1">
+      <div className="headerComps v-center jcsb wrapper w100">
         <div className="searchBar v-center ptb16">
           <input
             type="search"
