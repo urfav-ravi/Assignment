@@ -31,6 +31,7 @@ const CustomBar = (props) => {
   return (
     <g>
       <rect
+        className="custom-bar"
         x={x}
         y={y}
         width={width}
@@ -38,10 +39,6 @@ const CustomBar = (props) => {
         fill={fill}
         rx={10}
         ry={10}
-        style={{
-          transition: "none",
-          pointerEvents: "none",
-        }}
       />
     </g>
   );

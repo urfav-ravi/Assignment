@@ -1139,10 +1139,18 @@ table {
 .box-sd3 {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
 }
+body {
+  overflow: hidden;
+}
 .wrapper {
-  width: 93%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.dashbord {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100vh - 72.8px);
+  scrollbar-width: none;
 }
 .logo {
   height: 48px;
@@ -1188,4 +1196,110 @@ th {
   fill: none;
   stroke: #7493ff;
   stroke-linecap: round;
+}
+@media only screen and (max-width: 1024px) {
+  .flx60,
+  .flx40 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .navbar {
+    height: calc(100vh - 72px);
+  }
+  .dashbord {
+    height: calc(100vh - 72px);
+  }
+
+  .ordersCards,
+  .activityChart,
+  .recent-order {
+    margin-bottom: 24px;
+  }
+  .totalRevenue,
+  .activityChart,
+  .recent-order {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .flx25 {
+    flex: 0 0 50%;
+    max-width: 100%;
+  }
+
+  .totalOrder,
+  .totalDelivered {
+    margin-bottom: 16px;
+  }
+  .totalDelivered {
+    padding-right: 0;
+  }
+  .recharts-cartesian-axis-ticks {
+    font-size: 12px;
+  }
+  .custom-bar {
+    width: 16px;
+  }
+  .navlink,
+  .logOutBtn .btn {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .navbar {
+    height: calc(100vh - 48px);
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+
+  .cust-profile {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .flx25 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .fs28 {
+    font-size: 24px;
+  }
+
+  .headerComps {
+    justify-content: end;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .searchBar {
+    display: none;
+  }
+  .profileBtn {
+    font-size: 18px;
+  }
+  .dashbord {
+    height: calc(100vh - 72px);
+  }
+  .totalOrder,
+  .totalCancelled {
+    padding-right: 0;
+  }
+  .totalCancelled {
+    margin-bottom: 16px;
+  }
+  .custom-bar {
+    width: 12px;
+  }
 }

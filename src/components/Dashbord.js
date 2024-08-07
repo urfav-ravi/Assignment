@@ -23,12 +23,12 @@ const Dashbord = () => {
     <>
       <div className="container bg10 df">
         <Navbar />
-        <div className="wrapper">
-          <div className="heading ptb16">
+        <div className="wrapper dashbord">
+          <div className="main-heading ptb16">
             <h2 className="fs28 fw6">Dashbord</h2>
           </div>
-          <div className="row-1 df mb24">
-            <div className="col-4 flx60 df">
+          <div className="row-1 df mb24 fww">
+            <div className="ordersCards flx60 df fww">
               <div className="totalOrder flx25 pr16">
                 <div className="card-inner bg1 ptb12 pl12 pr8 br4">
                   <FaBasketShopping className="cardIcon bg4 p8 br8 fs20 mb8 fc6" />
@@ -82,9 +82,9 @@ const Dashbord = () => {
                 </div>
               </div>
             </div>
-            <div className="col-1 flx40 bg1 plr12 br4">
-              <div className="netProfit v-center jcsb">
-                <div className="card-inner bg1 ptb12 pl12 pr8 br4">
+            <div className="netProfitContainer flx40  bg1 br4">
+              <div className="netProfit w100 v-center jcsb">
+                <div className="card-inner ptb12 pl12 pr8">
                   <h3 className="cardHeading fs14 mb16">Net Profit</h3>
                   <h2 className="value fs32 fw6 mb16">$6759.25</h2>
                   <span className="pAndL v-center fs14 fc2">
@@ -137,8 +137,8 @@ const Dashbord = () => {
               </div>
             </div>
           </div>
-          <div className="row-2 df mb24">
-            <div className="col-1 flx60 df pr16">
+          <div className="row-2 df mb24 fww">
+            <div className="activityChart flx60 df pr16">
               <div className="orders w100 p16 bg1 br4">
                 <div className="v-center jcsb">
                   <h2 className="order-heading fs24 fw6 pt8 pb12">Activity</h2>
@@ -153,8 +153,8 @@ const Dashbord = () => {
                 <ActivityChart />
               </div>
             </div>
-            <div className="col-1 flx40 bg1 br4 v-center">
-              <div className="options p24">
+            <div className="optionsContainer flx40  v-center bg1 br4">
+              <div className="options w100 p24 ">
                 <div className="option-1 v-center jcsb mb12">
                   <div className="option-inner v-center">
                     <AiOutlineAim className="fc8 fs24 p12 bg5 br50 mr16" />
@@ -185,7 +185,7 @@ const Dashbord = () => {
               </div>
             </div>
           </div>
-          <div className="row-3 df">
+          <div className="row-3 df fww">
             <div className="recent-order flx60 pr16 df">
               <div className="orders w100 bg1 br4">
                 <div className="order-box ptb12 plr16 pr8">

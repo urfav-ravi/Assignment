@@ -3,7 +3,7 @@ import React from "react";
 const Ordertable = () => {
   return (
     <>
-      <table className="w100">
+      <table className="table w100">
         <thead className="w100 pb12 brd-b1 fs14">
           <tr className="fw6">
             <td>Customer</td>
